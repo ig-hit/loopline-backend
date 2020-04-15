@@ -6,5 +6,4 @@ COPY . .
 RUN go get -d -v .
 RUN go install -v .
 
-ENV port 1234
-CMD ["loopline", "-port=${port}"]
+CMD ["loopline"]
